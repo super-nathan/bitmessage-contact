@@ -1,0 +1,14 @@
+# Protect the htaccess file
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Protect bm.py
+<Files ./bm.py>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Disable directory browsing
+Options All -Indexes
